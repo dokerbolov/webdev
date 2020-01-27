@@ -44,7 +44,12 @@ html,body
 }
 #post-reg-win
 {
-            	
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    height: 5%;
+    width: 20%;
+    z-index: 2;   	
 }
 img
 {
@@ -93,4 +98,40 @@ a
     margin: 5%;
     top:-25%;
     color: white;
+}
+.code
+{
+    position: absolute;
+}
+.phone
+{
+    position: absolute;
+    left: 30%;
+}
+.input-code
+{
+    position: absolute;
+    left: 15%;
+    top: 70%;
+    width: 10%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.input-phone
+{
+    position: absolute;
+    left: 45%;
+    top: 70%;
+    width: 30%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.bottom
+{
+    position: absolute;
+    color: #0a73c9;
+    left: 33%;
+    top:-10%;
+    font-size: 0.9em;
+    font-weight: bold;
 }
