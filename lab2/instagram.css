@@ -1,0 +1,89 @@
+html,body
+{
+	font-family: sans-serif;
+	width: 100%;
+	margin: 0;
+	background: #f2f2f2;
+}
+#main
+{
+	border-style: 5px solid;
+	border-color: #adad85;
+	position: absolute;
+	border: 3px #b8b894;
+	left: 50%;
+	top: 5%;
+	width: 17%;
+	height: 60%;
+	background: white;
+}
+#photo
+{
+	position: absolute;
+	left: 30%;
+	top: 10%;
+}
+#after-main
+{
+	position: absolute;
+	left: 50%;
+	top: 67%;
+	background: white;
+	border: 3px #b8b894;
+	width: 17%;
+	height: 7%;
+	text-align: center;
+}
+.after-main
+{
+	font-size: 0.8em;
+	position: absolute;
+	top:20%;
+	left: 30%;
+}
+#last-main
+{
+	font-size: 0.8em;
+	position: absolute;
+	left: 50%;
+	top: 75%;
+	border: 3px #b8b894;
+	width: 17%;
+	height: 15%;
+	text-align: center;
+}
+#footer
+{
+	position: absolute;
+	top: 95%;
+	left: 25%;
+	width: 40%;
+	height: 5%;
+	color: black;
+	font-size: 0.7em;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+a
+{
+	text-decoration: none;
+}
+button
+{
+
+}
+.ios-download
+{
+	width: 45%;
+}
+.android-download
+{
+	width: 49%;
+}
+.last-footer
+{
+	color: gray;
+	font-size: 1em;
+	margin: 1em;
+	margin-left: 0;
+}
