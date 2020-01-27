@@ -17,6 +17,33 @@ html,body
 	height: 60%;
 	background: white;
 }
+.inst-word
+{
+	position: absolute;
+	width: 50%;
+	top: 5%;
+	left: 25%;
+}
+.main-word
+{
+	position: absolute;
+	color: gray;
+	text-align: center;
+	margin: 10%;
+	top: 10%;
+	font-family: sans-serif;
+}
+button
+{
+	position: absolute;
+	color:white;
+	border-radius: 2px;
+	background: #3897f0;
+	top: 27%;
+	left: 15%;
+	width: 70%;
+	height: 5%;	
+}
 #photo
 {
 	position: absolute;
@@ -67,10 +94,6 @@ html,body
 a
 {
 	text-decoration: none;
-}
-button
-{
-
 }
 .ios-download
 {
