@@ -1,0 +1,96 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin:0;
+    font-family: sans-serif;
+}
+#head
+{
+    background: #0a73c9	;
+    height: 25%;
+    width: 100%;
+    overflow: auto;
+    position: absolute;
+    z-index: 1;
+}
+#main
+{
+    background: #e1e3e6;
+    height: 75%;
+    width: 100%;
+    top: 25%;
+    position: absolute;
+    z-index: 1;
+}
+#prev-reg-win
+{
+	position: absolute;
+	left: 40%;
+	top: 15%;
+	height: 5%;
+	width: 20%;
+	z-index: 2;
+}
+#reg-win
+{
+	position: absolute;
+    background: #fdfbf9;
+    left:40%;
+    top:20%;
+    height: 35%;
+    width: 20%;
+    z-index: 2;
+}
+#post-reg-win
+{
+            	
+}
+img
+{
+	display: inline-block;
+	margin-left:5%;
+	width: 8%;
+}
+h4
+{
+	font-family: sans-serif;
+	margin: 15%;
+	margin-top: 10%;
+}
+p
+{
+	color:gray;
+	margin: 15%;
+	margin-top: -10%;
+	font-size: 0.8em;
+}
+.prev-list
+{
+	color:gray;
+	margin: 15%;
+	margin-top: -10%;
+	font-size: 0.8em;
+	margin-bottom: 0%;
+}
+select
+{
+	border:none;
+    margin:15%;
+    margin-top:5%;
+}
+.right
+{
+	font-size: 0.9em;
+	text-align: right;
+	font-weight: bold;
+	left: 70%;
+}
+a
+{
+	position: absolute;
+	text-decoration: none;
+    margin: 5%;
+    top:-25%;
+    color: white;
+}
