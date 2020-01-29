@@ -63,7 +63,7 @@ label
 	top:6%;
 	font-size: 0.9em;
 }
-button
+.button1
 {
 	color: white;
 	background: #4267b2;
@@ -116,6 +116,7 @@ h1
 	width: 45%;
 	height: 6%;
 	margin: 1%;
+	font-size: 1.1em;
 	border-style: solid;
 	border-color: lightblue; 
 }
@@ -125,6 +126,41 @@ h1
 	width: 94%;
 	height: 6%;
 	margin: 1%;
+	font-size: 1.1em;
 	border-style: solid;
 	border-color: lightblue; 
+}
+select
+{
+	width: 15%;
+	height: 5%;
+}
+h4
+{
+	display: inline;
+	font-weight: none;
+	margin-right: 3%;
+	text-decoration: none;
+	font-size: 1.2em;
+	font-family: sans-serif;
+	font-weight: normal; 
+}
+.button2
+{
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 1.2em;
+	border: 10px black;
+	width: 45%;
+	height: 7%;
+	border-radius: 5%;
+	background:linear-gradient(#67ae55, #578843);
+}
+#footer
+{
+	position: absolute;
+	left: 25%;
+	top: 83%;
+	width: 53%; 
 }
