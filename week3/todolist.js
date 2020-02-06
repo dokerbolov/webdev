@@ -12,17 +12,27 @@
         myNodelist[i].appendChild(span);
     }    
 // Click on a close button to hide the current list item
-    var close = document.getElementsByClassName("close");
-    var i;
-    for (i = 0; i < close.length; i++) 
-    {
-        close[i].onclick = function() 
-        {
-            var div = this.parentElement;
-            div.style.display = "none";
-        }
-    }
 
+        var close = document.getElementsByClassName("close");
+        var i;
+        for (i = 0; i < close.length; i++) 
+        {
+            close[i].onclick = function() 
+            {
+                var div = this.parentElement;
+                div.style.display = "none";
+            }
+        }
+
+    // function DeleteAll()
+    // {
+    //     var close = document.getElementsByClassName("close");
+    //     var i;
+    //     for (i = 0; i < close.length; i++)
+    //     {
+    //         close[i].parentElement.style.display = "none";
+    //     }
+    // }
 // Create a new list item when clicking on the "Add" button
     function newElement() 
     {
@@ -53,7 +63,7 @@
         span.className = "close";
         document.body.appendChild(span);
         li.appendChild(span);
-
+        
         for (i = 0; i < close.length; i++) 
         {
             close[i].onclick = function() 
