@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ToDo List</title>
+        <link rel="stylesheet" type="text/css" href="todolist.css">
+    </head>
+    <header>
+        <h3 class="text">ToDo List</h3>
+    </header>
+    <body>
+        <div id="main">
+            <h2 class="text">ToDo List</h2>
+            <input type="text" name="text" id="myInput" class="input" placeholder="New Task">
+            <button onclick="newElement()" class="button">
+                Add
+            </button>
+            <div id="todolist">
+                <ul id="myUL">
+                    <li>
+                        <input type="checkbox" id="check">
+                        <label>First Task</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="todolist.js">
+    </script>
+</html>
