@@ -32,11 +32,11 @@ export class ProductDetailComponent implements OnInit {
     this.categoryService.getCategory(id).subscribe(category => this.category = category);
   }
 
-  getProduct()
-  {
-      const id = +this.route.snapshot.paramMap.get('product_id');
-      this.categoryService.getProduct(product_id).subscribe(product => this.product = product)
-  }
+  // getProduct()
+  // {
+  //     const id = +this.route.snapshot.paramMap.get('product_id');
+  //     this.categoryService.getProduct(product_id).subscribe(product => this.product = product)
+  // }
 
   goBack():void
   {

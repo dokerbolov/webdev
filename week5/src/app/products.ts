@@ -5,7 +5,7 @@ export const categories =
       id: 1,
       products: [
         {
-          product_id: 10,
+          id: 10,
           name: 'Home Camera',
           rating: 5.0,
           // tslint:disable-next-line: max-line-length
@@ -16,7 +16,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/4000262471010.html?spm=a2g0o.tm75989.9778834960.16.2f0428dc0SHqgg&&scm=1007.25281.150765.0&scm_id=1007.25281.150765.0&scm-url=1007.25281.150765.0&pvid=96a704ba-f1ed-4d4e-b32d-cf8d2e5793c1'
         },
         {
-          product_id: 11,
+          id: 11,
           name: 'Electric Aroma',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length
@@ -27,7 +27,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/32857808886.html?spm=a2g0o.tm75989.9778834960.7.2f0428dc0SHqgg&&scm=1007.25281.150765.0&scm_id=1007.25281.150765.0&scm-url=1007.25281.150765.0&pvid=5d159167-6214-4437-a9ee-d771090db91e'
         },
         {
-          product_id: 12,
+          id: 12,
           name: 'Hair Dryer',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length
@@ -38,7 +38,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/4000287033783.html?spm=a2g0o.tm75989.6538008180.7.2f0428dc0SHqgg&&scm=1007.25281.150765.0&scm_id=1007.25281.150765.0&scm-url=1007.25281.150765.0&pvid=0b75e4f3-cb7f-4a9a-a137-cb8e3a056f1e'
         },
         {
-          product_id: 13,
+          id: 13,
           name: 'Wallpaper',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length
@@ -49,7 +49,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/1000006184157.html?spm=a2g0o.productlist.0.0.70314aaeq7WQhK&algo_pvid=d4e01d9d-b464-4afc-b949-3ec3a255a672&algo_expid=d4e01d9d-b464-4afc-b949-3ec3a255a672-25&btsid=0ab6f82415821741696113243e2cd8&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 14,
+          id: 14,
           name: 'Remote Control',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length
@@ -60,7 +60,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/33003774219.html?spm=a2g0o.productlist.0.0.70314aaeq7WQhK&algo_pvid=d4e01d9d-b464-4afc-b949-3ec3a255a672&algo_expid=d4e01d9d-b464-4afc-b949-3ec3a255a672-26&btsid=0ab6f82415821741696113243e2cd8&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 15,
+          id: 15,
           name: 'Air Control',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length
@@ -71,7 +71,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/32888738251.html?spm=a2g0o.productlist.0.0.70314aaeq7WQhK&algo_pvid=d4e01d9d-b464-4afc-b949-3ec3a255a672&algo_expid=d4e01d9d-b464-4afc-b949-3ec3a255a672-40&btsid=0ab6f82415821741696113243e2cd8&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 16,
+          id: 16,
           name: 'Lock',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length
@@ -82,7 +82,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/4000439508919.html?spm=a2g0o.productlist.0.0.70314aaeq7WQhK&algo_pvid=d4e01d9d-b464-4afc-b949-3ec3a255a672&algo_expid=d4e01d9d-b464-4afc-b949-3ec3a255a672-42&btsid=0ab6f82415821741696113243e2cd8&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 17,
+          id: 17,
           name: 'Pillow',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length
@@ -93,7 +93,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/4000092031558.html?spm=a2g0o.productlist.0.0.70314aaeq7WQhK&algo_pvid=a14f211b-0ab9-4c7d-910d-95500fe2dc67&algo_expid=a14f211b-0ab9-4c7d-910d-95500fe2dc67-56&btsid=0ab6d69f15821745410508384e1333&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 18,
+          id: 18,
           name: 'Locks',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length
@@ -104,7 +104,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/33006141928.html?spm=a2g0o.productlist.0.0.70314aaeq7WQhK&algo_pvid=e19bd7b4-3992-4926-8ad5-19ffd4012678&algo_expid=e19bd7b4-3992-4926-8ad5-19ffd4012678-26&btsid=0ab50f0815821745762932640eb3af&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 19,
+          id: 19,
           name: 'Wallpaper',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length
@@ -122,7 +122,7 @@ export const categories =
       products:
       [
         {
-          product_id: 20,
+          id: 20,
           name: 'CHUWI LapBook',
           rating: 5,
           description: 'CHUWI LapBook Pro 14.1 Inch Intel Gemini-Lake N4100 Quad Core 8GB RAM 256GB SSD Windows 10 Laptop with Backlit Keyboard',
@@ -132,7 +132,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/32982839253.html?spm=a2g0o.tm75989.9778834960.3.2f0428dc0SHqgg&&scm=1007.25281.150765.0&scm_id=1007.25281.150765.0&scm-url=1007.25281.150765.0&pvid=04821a81-168d-4cea-90b7-848145ce1ba0'
         },
         {
-          product_id: 21,
+          id: 21,
           name: 'Drawing Digital Tablet',
           rating: 4.9,
           // tslint:disable-next-line: max-line-length
@@ -143,7 +143,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/33028093884.html?spm=a2g0o.tm75989.9778834960.5.2f0428dc0SHqgg&&scm=1007.25281.150765.0&scm_id=1007.25281.150765.0&scm-url=1007.25281.150765.0&pvid=04821a81-168d-4cea-90b7-848145ce1ba0'
         },
         {
-          product_id: 22,
+          id: 22,
           name: 'RAM',
           rating: 4.8,
           // tslint:disable-next-line: max-line-length
@@ -154,7 +154,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/32981048419.html?spm=a2g0o.tm75989.1124449980.2.2f0428dc0SHqgg&&scm=1007.25281.150765.0&scm_id=1007.25281.150765.0&scm-url=1007.25281.150765.0&pvid=3ea0df9f-5a11-4417-af07-341b5b0fd91c'
         },
         {
-          product_id: 23,
+          id: 23,
           name: 'Graphic Video Card',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length
@@ -165,7 +165,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/32836727694.html?spm=a2g0o.tm75989.1124449980.1.2f0428dc0SHqgg&&scm=1007.25281.150765.0&scm_id=1007.25281.150765.0&scm-url=1007.25281.150765.0&pvid=3ea0df9f-5a11-4417-af07-341b5b0fd91c'
         },
         {
-          product_id: 24,
+          id: 24,
           name: 'Gaming Mouse',
           rating: 4.9,
           // tslint:disable-next-line: max-line-length
@@ -176,7 +176,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/4000171337345.html?spm=a2g0o.tm75989.6574424220.4.2f0428dc0SHqgg&&scm=1007.25281.150765.0&scm_id=1007.25281.150765.0&scm-url=1007.25281.150765.0&pvid=a282bcf4-ebc4-4059-83ad-d7514682175d'
         },
         {
-          product_id: 25,
+          id: 25,
           name: 'PC',
           rating: 4.8,
           // tslint:disable-next-line: max-line-length
@@ -187,7 +187,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/32836727694.html?spm=a2g0o.tm75989.1124449980.1.2f0428dc0SHqgg&&scm=1007.25281.150765.0&scm_id=1007.25281.150765.0&scm-url=1007.25281.150765.0&pvid=3ea0df9f-5a11-4417-af07-341b5b0fd91chttps://www.aliexpress.com/item/33010764223.html?spm=a2g0o.productlist.0.0.1110ccbfM9r6KT&algo_pvid=bb9abb7b-30c8-4411-b565-1cc538708eda&algo_expid=bb9abb7b-30c8-4411-b565-1cc538708eda-8&btsid=0ab50f0815821735753333249eb356&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 26,
+          id: 26,
           name: 'Router',
           rating: 5.0,
           // tslint:disable-next-line: max-line-length
@@ -198,7 +198,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/32936415674.html?spm=a2g0o.productlist.0.0.1110ccbfM9r6KT&algo_pvid=bb9abb7b-30c8-4411-b565-1cc538708eda&algo_expid=bb9abb7b-30c8-4411-b565-1cc538708eda-16&btsid=0ab50f0815821735753333249eb356&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 27,
+          id: 27,
           name: 'Motherboard case',
           rating: 4.5,
           // tslint:disable-next-line: max-line-length
@@ -209,7 +209,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/33008330834.html?spm=a2g0o.productlist.0.0.1110ccbfM9r6KT&algo_pvid=bb9abb7b-30c8-4411-b565-1cc538708eda&algo_expid=bb9abb7b-30c8-4411-b565-1cc538708eda-24&btsid=0ab50f0815821735753333249eb356&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 28,
+          id: 28,
           name: 'Keyboard',
           rating: 4.8,
           // tslint:disable-next-line: max-line-length
@@ -220,7 +220,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/32742079000.html?spm=a2g0o.productlist.0.0.1ca71dddIvISg5&algo_pvid=7dc05cbe-d8e8-419e-a899-05dd2230e98b&algo_expid=7dc05cbe-d8e8-419e-a899-05dd2230e98b-3&btsid=0ab6fa8115821739740403227edd51&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 29,
+          id: 29,
           name: 'NumPad',
           rating: 4.9,
           // tslint:disable-next-line: max-line-length
@@ -238,7 +238,7 @@ export const categories =
       products:
       [
         {
-          product_id: 30,
+          id: 30,
           name: 'Card Memory',
           rating: 4.9,
           // tslint:disable-next-line: max-line-length
@@ -249,7 +249,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/32740307068.html?spm=a2g0o.tm75989.5294439650.1.2f0428dc0SHqgg&&scm=1007.25281.150765.0&scm_id=1007.25281.150765.0&scm-url=1007.25281.150765.0&pvid=bb54ab23-5d53-49e4-a541-675c4ccde657'
         },
         {
-          product_id: 31,
+          id: 31,
           name: 'Case',
           rating: 4.9,
           // tslint:disable-next-line: max-line-length
@@ -260,7 +260,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/4000252836752.html?spm=a2g0o.productlist.0.0.288353ad8NY34q&algo_pvid=71afec7a-4ee0-4721-883c-ddae9f054409&algo_expid=71afec7a-4ee0-4721-883c-ddae9f054409-1&btsid=0ab6d69515821747686212137e5348&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 32,
+          id: 32,
           name: 'Airpods',
           rating: 4.9,
           // tslint:disable-next-line: max-line-length
@@ -271,7 +271,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/32843956756.html?spm=a2g0o.productlist.0.0.54f83d8eL4cHWb&algo_pvid=85ec31ca-c0b2-4a3d-96c8-17a16e3afb79&algo_expid=85ec31ca-c0b2-4a3d-96c8-17a16e3afb79-0&btsid=0ab6fb8815821749072448993ea830&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 33,
+          id: 33,
           name: 'Airpods Pro',
           rating: 4.9,
           // tslint:disable-next-line: max-line-length
@@ -282,7 +282,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/4000354072490.html?spm=a2g0o.detail.1000060.2.23d2b431FjPZYp&gps-id=pcDetailBottomMoreThisSeller&scm=1007.13339.146401.0&scm_id=1007.13339.146401.0&scm-url=1007.13339.146401.0&pvid=3514599d-7932-4aef-9f5a-d1709be2773c'
         },
         {
-          product_id: 34,
+          id: 34,
           name: 'Case headphones',
           rating: 4.7,
           // tslint:disable-next-line: max-line-length
@@ -293,7 +293,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/32971046858.html?spm=a2g0o.productlist.0.0.23f15c96qsPocH&algo_pvid=92c6db02-466f-4e63-958b-ac81016195f9&algo_expid=92c6db02-466f-4e63-958b-ac81016195f9-0&btsid=0ab6d69515821750346735552e53ba&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 35,
+          id: 35,
           name: 'Band for Watch',
           rating: 4.9,
           // tslint:disable-next-line: max-line-length
@@ -304,7 +304,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/32879537923.html?spm=a2g0o.productlist.0.0.11654088MQyQMx&algo_pvid=f36da556-934d-4b47-a748-7805bbb2e722&algo_expid=f36da556-934d-4b47-a748-7805bbb2e722-1&btsid=0ab6f83915821751603231070e41ba&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 36,
+          id: 36,
           name: 'SmartWatch',
           rating: 4.9,
           // tslint:disable-next-line: max-line-length
@@ -315,7 +315,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/4000591519829.html?spm=a2g0o.productlist.0.0.1c0e418arden2S&algo_pvid=e58de3b8-647b-4514-ac15-c9bcb12309ce&algo_expid=e58de3b8-647b-4514-ac15-c9bcb12309ce-0&btsid=0ab6f82115821752328702644e6a10&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 37,
+          id: 37,
           name: 'Case',
           rating: 4.9,
           // tslint:disable-next-line: max-line-length
@@ -326,7 +326,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/33022282524.html?spm=a2g0o.productlist.0.0.17a0127aaYKmeA&algo_pvid=54edf3d2-14d1-48d9-b773-3a9361a738c5&algo_expid=54edf3d2-14d1-48d9-b773-3a9361a738c5-1&btsid=0ab50a5715821753030353257e3786&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 38,
+          id: 38,
           name: 'Cover Glass',
           rating: 4.9,
           // tslint:disable-next-line: max-line-length
@@ -337,7 +337,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/4000252836752.html?spm=a2g0o.productlist.0.0.288353ad8NY34q&algo_pvid=71afec7a-4ee0-4721-883c-ddae9f054409&algo_expid=71afec7a-4ee0-4721-883c-ddae9f054409-1&btsid=0ab6d69515821747686212137e5348&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 39,
+          id: 39,
           name: 'Smartphone',
           rating: 4.9,
           // tslint:disable-next-line: max-line-length
@@ -355,7 +355,7 @@ export const categories =
       products:
       [
         {
-          product_id: 40,
+          id: 40,
           name: 'Stickers',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length
@@ -366,7 +366,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/4000267735960.html?spm=a2g0o.tm75989.1540578180.9.2f0428dc0SHqgg&&scm=1007.25281.150765.0&scm_id=1007.25281.150765.0&scm-url=1007.25281.150765.0&pvid=0da3d642-cb91-4199-8c17-3b29c34c1c0b'
         },
         {
-          product_id: 41,
+          id: 41,
           name: 'Backpack',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length
@@ -377,7 +377,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/32997144766.html?spm=a2g0o.productlist.0.0.5fe0693dLPdOFL&algo_pvid=46db1e48-5516-4473-bd5f-125daf9f92a2&algo_expid=46db1e48-5516-4473-bd5f-125daf9f92a2-2&btsid=0ab6d69515821755141437970e539b&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 42,
+          id: 42,
           name: 'Stickers',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length
@@ -388,7 +388,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/32849093832.html?spm=a2g0o.productlist.0.0.522869daykIyqo&algo_pvid=ef57d262-cd68-4bb9-8dc8-47c7227e7192&algo_expid=ef57d262-cd68-4bb9-8dc8-47c7227e7192-5&btsid=0ab6d59515821759296996953e1089&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 43,
+          id: 43,
           name: 'KeyChain',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length
@@ -399,7 +399,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/32997144766.html?spm=a2g0o.productlist.0.0.5fe0693dLPdOFL&algo_pvid=46db1e48-5516-4473-bd5f-125daf9f92a2&algo_expid=46db1e48-5516-4473-bd5f-125daf9f92a2-2&btsid=0ab6d69515821755141437970e539b&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 44,
+          id: 44,
           name: 'Tabletop',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length
@@ -410,7 +410,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/4000368653004.html?spm=a2g0o.productlist.0.0.522869daykIyqo&algo_pvid=ef57d262-cd68-4bb9-8dc8-47c7227e7192&algo_expid=ef57d262-cd68-4bb9-8dc8-47c7227e7192-6&btsid=0ab6d59515821759296996953e1089&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 45,
+          id: 45,
           name: 'Toy',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length
@@ -421,7 +421,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/32997144766.html?spm=a2g0o.productlist.0.0.5fe0693dLPdOFL&algo_pvid=46db1e48-5516-4473-bd5f-125daf9f92a2&algo_expid=46db1e48-5516-4473-bd5f-125daf9f92a2-2&btsid=0ab6d69515821755141437970e539b&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 46,
+          id: 46,
           name: 'Glass',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length
@@ -432,7 +432,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/33059317560.html?spm=a2g0o.productlist.0.0.522869daykIyqo&s=p&algo_pvid=ef57d262-cd68-4bb9-8dc8-47c7227e7192&algo_expid=ef57d262-cd68-4bb9-8dc8-47c7227e7192-8&btsid=0ab6d59515821759296996953e1089&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 47,
+          id: 47,
           name: 'Backpack',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length
@@ -443,7 +443,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/32997144766.html?spm=a2g0o.productlist.0.0.5fe0693dLPdOFL&algo_pvid=46db1e48-5516-4473-bd5f-125daf9f92a2&algo_expid=46db1e48-5516-4473-bd5f-125daf9f92a2-2&btsid=0ab6d69515821755141437970e539b&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 48,
+          id: 48,
           name: 'Speedboat',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length
@@ -454,7 +454,7 @@ export const categories =
           link: 'https://www.aliexpress.com/item/32881983473.html?spm=a2g0o.productlist.0.0.6e26118381ZOf3&algo_pvid=d71fbc32-1e71-4829-9ff3-355301d105c0&algo_expid=d71fbc32-1e71-4829-9ff3-355301d105c0-33&btsid=0ab6fa7b15821757167101082e733e&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_'
         },
         {
-          product_id: 49,
+          id: 49,
           name: 'KeyChain',
           rating: 4.6,
           // tslint:disable-next-line: max-line-length

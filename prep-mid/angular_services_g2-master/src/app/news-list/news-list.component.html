@@ -1,0 +1,7 @@
+<div *ngFor="let paper of componentNews">
+  <a [routerLink]="'/news/' + paper.id">{{ paper.title }}</a>
+</div>
+
+<button (click)="addNewsToService()">
+  Add news
+</button>

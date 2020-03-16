@@ -1,21 +1,31 @@
 import { Category, Product } from './../Category';
 import { categories } from './products';
 import { Injectable } from '@angular/core';
-import {Observable, of} from 'rxjs';
+import { Observable, of } from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { catchError, map, tap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CategoryService {
 
+  private categoriesUrl = 'api/categories'
+
   getCategories():Observable<Category[]>
   {
-    return of(categories);
+    return this.http.get<Category[]>(this.categoriesUrl).pipe(
+      catchError(this.handleError<Category[]>('getCategories',[]))
+    )
   }
 
-  getProducts(): Observable<Product[]>
+  private handleError<T>(operation = 'operation', result?: T)
   {
-    return of(categories.products);
+    return (error: any): Observable<T> =>
+    {
+      console.error(error);
+      return of(result as T);
+    }
   }
 
   getCategory(id:number): Observable<Category>
@@ -23,10 +33,12 @@ export class CategoryService {
       return of(categories.find(category => category.id === id));
   }
 
-  getProduct(product_id:number): Observable<Product>
+  deleteProduct (product: Product | number): Observable<Product>
   {
-      return of(categories.find(products => categories.products.product_id === product_id));
+    const id = typeof product === 'number' ? product : product.pro
   }
 
-  constructor() { }
+  constructor(
+    private http: HttpClient
+  ) { }
 }

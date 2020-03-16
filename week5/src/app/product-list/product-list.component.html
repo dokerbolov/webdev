@@ -4,12 +4,15 @@
 <div *ngFor="let product of category.products" style="display: inline-block; width: 40%;">
   <h3>{{product.name}}</h3>
   <p>
-  <img src="{{product.image}}" alt="picture-of-product" routerLink="/products/{{product.product_id}}"><br>
+  <img src="{{product.image}}" alt="picture-of-product"><br>
   {{product.description}}<br>
   Rating: {{product.rating}}<br>
   <a href="{{product.link}}">Visit Aliexpress</a><br>
   <button>
     <a href="https://wa.me/77476286082?text={{product.link}}" style="color: white;">Share</a>
+  </button>
+  <button (click)="delete(hero)">
+    x
   </button>
   </p>
 </div>

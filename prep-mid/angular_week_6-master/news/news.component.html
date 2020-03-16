@@ -1,0 +1,7 @@
+<div *ngFor="let localNews of localComponentNews">
+  <p> {{ localNews }}</p>
+</div>
+
+<button (click)="newsService.addNews('NewsLetter')">
+  Add New News
+</button>

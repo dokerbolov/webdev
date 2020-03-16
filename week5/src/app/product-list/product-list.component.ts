@@ -1,5 +1,5 @@
 import { CategoryService } from './../category.service';
-import { Category } from '../../Category';
+import { Category, Product } from '../../Category';
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
@@ -35,6 +35,12 @@ export class ProductListComponent implements OnInit{
   goBack():void
   {
     this.location.back();
+  }
+
+  delete(product: Product): void
+  {
+    this.categories.products = this.categories.products.filter(p => p !== product);
+    this.categoryService.deleteProduct(product).subscribe();
   }
 }
 
