@@ -1,0 +1,7 @@
+virtualenv env - sozdenie environment
+env/scripts/activate - (env)
+pip intsall django
+django-admin startproject hh_back
+cd hh_back
+python manage.py migrate
+python manage.py runserver

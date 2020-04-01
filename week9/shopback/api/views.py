@@ -5,7 +5,7 @@ from api.models import Product, Category
 def category_list(request):
     categories = Category.objects.all()
     category_json = [category.to_category_json() for category in categories]
-    return JsonResponse(category_json, safe=False)
+    return JsonResponse(category_json,)
 
 def category_detail(request, category_id):
     try:
