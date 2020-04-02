@@ -1,0 +1,14 @@
+from api.models import Company
+c = Company()
+c.name = 'company 4'
+c.desctiption = 'erftgyhjk'
+c.city = 'ast'
+c.address = 'dmis'
+
+
+from api.models import Vacancy
+v = Vacancy()
+v.name = 'vacancy 1'
+v.description = 'erftgyhjk'
+v.salary = 500
+v.company = '1'
