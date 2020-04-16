@@ -35,7 +35,7 @@ export class CategoryService {
 
   deleteProduct (product: Product | number): Observable<Product>
   {
-    const id = typeof product === 'number' ? product : product.pro
+    const id = typeof product === 'number' ? product : product;
   }
 
   constructor(
