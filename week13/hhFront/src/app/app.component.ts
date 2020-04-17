@@ -1,3 +1,4 @@
+import { CompanyService } from './Company.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,36 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hhFront';
-}
+
+  logged = false;
+
+  username = '';
+  password = '';
+
+  constructor(private companyService: CompanyService) {}
+
+  ngOnInit(){
+    let token = localStorage.getItem('token');
+      if (token){
+        this.logged = true;
+      }
+    }
+
+    login(){
+      this.companyService.login(this.username, this.password)
+        .subscribe(res => {
+          localStorage.setItem('token', res.token);
+
+          this.logged = true;
+
+          this.username = '';
+          this.password = '';
+        })
+    }
+
+    logout(){
+      localStorage.clear();
+      this.logged = false;
+    }
+  }
+

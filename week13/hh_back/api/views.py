@@ -16,30 +16,32 @@ class CompanyListAPIView(generics.ListCreateAPIView):
     queryset = Company.objects.all()
     serializer_class = CompanySerializer2
 
-class CompanyDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Company.objects.all()
-    serializer_class = CompanySerializer2
+@api_view(['GET', 'PUT', 'DELETE'])
+def company_detail(request, company_id):
+    try:
+        company = Company.objects.get(id=company_id)
+    except Company.DoesNotExist as e:
+        return Response({'error': str(e)})
 
-def company_vacancy(request, company_id):
-    if request.method == "GET":
-        try:
-            vacancy_list = Vacancy.objects.all()
-            vacancies = []
-            for vacancy in vacancy_list:
-                if(vacancy.company.id == company_id):
-                    vacancies.append(vacancy.vacancy_to_json())
-        except Company.DoesNotExist as e:
-            return JsonResponse({'error': 'company doesn`t exist'})
-        return JsonResponse(vacancies,safe=False)
-    elif request.method == "POST":
-        pass
+    if request.method == 'GET':
+        serializer = CompanySerializer2(company)
+        return Response(serializer.data)
+
+    elif request.method == 'PUT':
+        serializer = CompanySerializer2(instance=company, data=request.data)
+        if serializer.is_valid():
+            serializer.save()  # update function in serializer class
+            return Response(serializer.data)
+        return Response({'error': serializer.errors})
+    elif request.method == 'DELETE':
+        company.delete()
+        return Response({'deleted': True})
 
 @api_view(['GET', 'POST'])
 def company_vacancy(request, company_id):
     if request.method == 'GET':
         vacancies = Vacancy.objects.filter(company = company_id)
         serializer = VacancySerializer(vacancies, many=True)
-
         return Response(serializer.data)
 
 @api_view(['GET', 'POST'])
@@ -56,32 +58,6 @@ def vacancy_list(request):
         return Response({'error': serializer.errors},
                             status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-@api_view(['GET', 'PUT', 'DELETE'])
-def vacancy_detail(request, vacancy_id):
-    try:
-        vacancy = Vacancy.objects.get(id=vacancy_id)
-    except Vacancy.DoesNotExist as e:
-        return Response({'error': str(e)})
-
-    if request.method == 'GET':
-        serializer = VacancySerializer(vacancy)
-        return Response(serializer.data)
-
-    elif request.method == 'DELETE':
-        vacancy.delete()
-        return Response({'deleted': True})
-
-
-def vacancy_top(request):
-    if request.method == "GET":
-        vacancies = Vacancy.objects.all().order_by('-salary')[:10:1]
-        vacancy_json = [vacancy.vacancy_to_json() for vacancy in vacancies]
-        if (len(vacancy_json) == 0):
-            return JsonResponse({'error': 'no vacancies'})
-        else:
-            return JsonResponse(vacancy_json, safe=False)
-    elif request.method == "POST":
-        pass
 
 
 

@@ -1,4 +1,4 @@
-import { Company, Vacancy } from './Company';
+import { Company, Vacancy, LoginResponse } from './Company';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -26,12 +26,15 @@ export class CompanyService {
     return this.http.get<Vacancy[]>(`${this.BASE_URL}/api/companies/${id}/vacancies`);
   }
 
-  getVacancy(id): Observable<Vacancy>{
-    return this.http.get<Vacancy>(`${this.BASE_URL}/api/vacancies/${id}/`);
-  }
-
   getVacancies(): Observable<Vacancy[]>{
     return this.http.get<Vacancy[]>(`${this.BASE_URL}/api/vacancies/`);
+  }
+
+  login(username, password): Observable<LoginResponse> {
+    return this.http.post<LoginResponse>(`${this.BASE_URL}/api/login/`, {
+      username,
+      password
+    })
   }
 
 }

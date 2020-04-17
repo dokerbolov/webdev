@@ -13,3 +13,8 @@ export class Vacancy{
   salary: number;
   company: Array<Company>;
 }
+
+
+export class LoginResponse {
+  token: string;
+}
