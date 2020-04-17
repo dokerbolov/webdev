@@ -1,3 +1,5 @@
+import { Vacancy_detailComponent } from './vacancy_detail/vacancy_detail.component';
+import { VacanciesComponent } from './vacancies/vacancies.component';
 import { Company_detailsComponent } from './company_details/company_details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CompaniesComponent } from './companies/companies.component';
@@ -7,7 +9,9 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {path: ``, redirectTo: '/companies', pathMatch: 'full'},
   {path: 'companies', component: CompaniesComponent},
-  {path: 'companies/:id', component: Company_detailsComponent}
+  {path: 'companies/:id', component: Company_detailsComponent},
+  {path: 'vacancies', component: VacanciesComponent},
+  {path: 'vacancies/:id', component: Vacancy_detailComponent},
 ];
 
 @NgModule({

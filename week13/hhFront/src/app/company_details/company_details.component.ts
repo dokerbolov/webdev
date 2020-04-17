@@ -1,6 +1,6 @@
 import { CompanyService } from './../Company.service';
 import { Component, OnInit } from '@angular/core';
-import { Company } from './../Company';
+import { Company, Vacancy } from './../Company';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
@@ -12,6 +12,7 @@ import { Location } from '@angular/common';
 export class Company_detailsComponent implements OnInit {
 
   company: Company;
+  vacancies: Vacancy[] = [];
 
   constructor(
     private companyService: CompanyService,
@@ -21,11 +22,17 @@ export class Company_detailsComponent implements OnInit {
 
   ngOnInit() {
     this.getCompany();
+    this.getVacanciesByCompany();
   }
 
   getCompany(){
     const id = +this.route.snapshot.paramMap.get('id');
     this.companyService.getCompany(id).subscribe(company => this.company = company);
+  }
+
+  getVacanciesByCompany(){
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.companyService.getVacanciesOfCompany(id).subscribe(vacancies => this.vacancies = vacancies);
   }
 
   goBack(){

@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from api.models import Company
+from api.models import Company, Vacancy
 
 class CompanySerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
@@ -26,3 +26,17 @@ class CompanySerializer2(serializers.ModelSerializer):
     class Meta:
         model = Company
         fields = ('id', 'name', 'description', 'city', 'address')
+
+class VacancySerializer(serializers.ModelSerializer):
+    class Meta:
+        company = serializers.IntegerField(write_only=True)
+
+        model = Vacancy
+        fields = ('id', 'name', 'description', 'salary', 'company', 'company')
+
+class CompanyWithVacancies(serializers.ModelSerializer):
+    vacancies = VacancySerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Company
+        fields = ('id', 'name', 'description', 'city', 'address', 'vacancies')
